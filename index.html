@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberSafe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔐 CyberSafe</h1>
+
+        <h2>Password Strength Checker</h2>
+
+       <div class="password-box">
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+    >
+
+    <button type="button" onclick="togglePassword()">
+        👁️
+    </button>
+</div>
+
+        <button onclick="checkPassword()">
+            Check Password
+        </button>
+
+        <p id="result"></p>
+        <div class="strength-bar">
+    <div id="strength-fill"></div>
+</div>
+
+<p id="strength-text">Password Strength: —</p>
+        <div class="requirements">
+    <p id="length">❌ At least 8 characters</p>
+    <p id="uppercase">❌ Contains an uppercase letter</p>
+    <p id="lowercase">❌ Contains a lowercase letter</p>
+    <p id="number">❌ Contains a number</p>
+    <p id="special">❌ Contains a special character</p>
+</div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
